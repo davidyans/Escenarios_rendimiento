@@ -5,19 +5,11 @@ Característica: Seguimiento del progreso del Sílabo de docentes
   Quiero saber si mi progreso en la asignatura sigue la proyección del sílabo
   Para adecuar el ritmo de enseñanza de los temas de mi materia.
 
-  Escenario: Crear cronograma estudiantil
-    Cuando el docente registra su cronograma de actividades
-    Entonces se define una proyección ideal para el avance de actividades
-
-  Escenario: Registrar avance semanal
-    Cuando el docente marca el tema visto en la semana actual
-    Entonces el progreso semanal del docente queda registrado
-
-  Esquema del escenario: Verificar el progreso según el cronograma
+  Esquema del escenario: Verificación del progreso académico del docente según el cronograma
     Cuando el docente visualiza su progreso de la semana <semana_actual> en base a que <temas_marcados>
     Entonces se visualiza un progreso <estado> respecto a la proyección ideal
     Ejemplos:
-      |semana_actual  | estado     | temas_marcados                                          |
+      |semana_actual  | estado      | temas_marcados                                          |
       |2              | normal      | Todos los temas hasta la semana actual están marcados   |
       |3              | atrasado    | Faltan temas por marcar en la semana actual             |
-      |1              | adelantado | Temas de semanas futuras están marcados                 |
+      |1              | adelantado  | Temas de semanas futuras están marcados                 |
